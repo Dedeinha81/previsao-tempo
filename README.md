@@ -1,38 +1,48 @@
                                                                        Explicação do código:
 
-* Importação de bibliotecas
 
-* requests: Para fazer requisições HTTP na API do OpenWeatherMap.
+# 🌤️ Previsão do Tempo com Python e Tkinter
 
-* tkinter: Para criar a interface gráfica.
+Este projeto é uma aplicação simples de previsão do tempo desenvolvida em **Python**, com interface gráfica feita com **Tkinter**. Ela utiliza a API do **OpenWeatherMap** para buscar informações meteorológicas de cidades brasileiras.
 
-* messagebox: Para exibir mensagens de erro ou alerta.
+---
 
-* Definição da API e parâmetros
+## 🧰 Tecnologias Utilizadas
 
-* API_KEY: Deve ser substituída pela sua chave de API do OpenWeatherMap.
+- Python 3  
+- Tkinter (interface gráfica)  
+- Requests (consumo de API HTTP)  
+- API OpenWeatherMap
+
+---
+
+## ✅ Funcionalidades
+
+- Busca a previsão do tempo para qualquer cidade do Brasil  
+- Exibe descrição do clima, temperatura em Celsius e umidade  
+- Interface simples e intuitiva  
+- Mensagens de alerta para entrada inválida ou cidade não encontrada
+
+---
+
+## 🚀 Como Executar
+
+1. Certifique-se de ter o Python 3 instalado.  
+2. Instale a biblioteca `requests`, caso não tenha:  
   
-* "Criei um conta e uma chave no OpenWeatherMap"
+   pip install requests
 
-* BASE_URL: URL da API para buscar a previsão do tempo.
+  
+## 🚀 Execute o script
 
-* Função buscar_previsao()
+ python previsao_tempo.py
+ 
+ Na interface, digite o nome da cidade brasileira desejada e clique em "Buscar" para ver a previsão.
 
-* Obtém o nome da cidade digitada pelo usuário.
+   ---
 
-* Monta a requisição com os parâmetros necessários (q, appid, lang, units).
-
-* Faz a requisição e processa os dados recebidos.
-
-* Exibe as informações na interface.
-
-* Se a cidade não for encontrada, exibe um alerta.
-
-* Criação da interface gráfica
-
-Um campo de entrada para a cidade.
-
-Um botão "Buscar" que chama a função buscar_previsao().
-
-Um rótulo (label_resultado) para exibir os dados do clima.
+   🔐 API Key
+Este projeto usa a API do OpenWeatherMap, que precisa de uma chave (API Key).
+Você pode criar uma conta gratuita e pegar sua chave em: https://openweathermap.org/api
+No código, troque o valor da variável API_KEY pela sua chave pessoal.
 
